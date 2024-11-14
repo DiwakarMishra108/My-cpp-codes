@@ -1,16 +1,16 @@
-#inclide<iostream>
+#include<iostream>
 using namespace std;
 int main(){
   int n;
   cout<<"Enter size of row and column"<<endl;
   cin>>n;
-  int **arr = new int[n];
+  int **arr = new int*[n];
   for(int i=0;i<n;i++){
     arr[i]= new int[n];
   }
   // Entering element of the array
   for(int i=0;i<n;i++){
-    for((int j=0;j<n;j++){
+    for(int j=0;j<n;j++){
       cin>>arr[i][j];
     }
   }
